@@ -1,6 +1,5 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
-
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -29,3 +28,10 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "120"
 
 vim.g.mapleader = " "
+
+vim.diagnostic.config({
+  virtual_text = true,  -- enables inline messages
+  signs = true,         -- keep the W/E in the gutter
+  underline = true,     -- optionally underline the code with issues
+  update_in_insert = false,
+})
