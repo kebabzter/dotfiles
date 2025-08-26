@@ -22,6 +22,7 @@ return {
                     'lua_ls',
                     'laravel_ls',
                     'gopls',
+                    'pylsp',
                 }
             })
 
