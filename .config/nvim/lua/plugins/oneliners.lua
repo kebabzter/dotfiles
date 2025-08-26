@@ -12,6 +12,9 @@ return {
         end
     },
     {
+        'ThePrimeagen/vim-be-good',
+    },
+    {
         'mbbill/undotree',
         config = function()
             vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
