@@ -18,12 +18,14 @@ return {
                  "blade",
                  "javascript",
                  "typescript",
+                 "tsx",
                  "lua",
                  "vim",
                  "vimdoc",
                  "query",
                  "markdown",
-                 "markdown_inline"    
+                 "markdown_inline",
+                 "svelte"
             },
             auto_install = false,
         })
