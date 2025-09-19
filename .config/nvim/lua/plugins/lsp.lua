@@ -33,9 +33,12 @@ return {
           'svelte',
         }
       })
-      require('lspconfig').ts_ls.setup {
+
+      vim.lsp.enable('ts_ls');
+      vim.lsp.config('ts_ls', {
         filetypes = { 'typescript', 'typescriptreact' }
-      }
+      });
+
       vim.diagnostic.config({
         virtual_text = true,         -- enables inline messages
         signs = true,                -- keep the W/E in the gutter
