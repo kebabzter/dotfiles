@@ -25,7 +25,8 @@ return {
                  "query",
                  "markdown",
                  "markdown_inline",
-                 "svelte"
+                 "svelte",
+                 "yaml",
             },
             auto_install = false,
         })
