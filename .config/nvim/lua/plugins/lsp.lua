@@ -31,6 +31,7 @@ return {
           'gopls',
           'pylsp',
           'svelte',
+          'jdtls'
         }
       })
 

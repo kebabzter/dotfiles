@@ -23,6 +23,7 @@ return {
                  "vim",
                  "vimdoc",
                  "query",
+                 "java",
                  "markdown",
                  "markdown_inline",
                  "svelte",
