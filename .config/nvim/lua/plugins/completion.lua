@@ -26,6 +26,9 @@ return {
         trigger = {
           enabled = false
         },
+        window = {
+          show_documentation = true,
+        },
       },
       appearance = {
         use_nvim_cmp_as_default = true,
