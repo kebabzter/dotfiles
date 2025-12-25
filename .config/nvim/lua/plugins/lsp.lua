@@ -38,7 +38,7 @@ return {
 
       vim.lsp.enable('ts_ls');
       vim.lsp.config('ts_ls', {
-        filetypes = { 'typescript', 'typescriptreact', 'javascript', 'javascriptreact' }
+        filetypes = { 'typescript', 'typescriptreact', 'javascript', 'javascriptreact' },
       });
 
       vim.diagnostic.config({
