@@ -1,3 +1,32 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-sudo reflector --latest 200 --country Netherlands,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+# Colors
+GREEN="\e[32m"
+CYAN="\e[36m"
+YELLOW="\e[33m"
+RED="\e[31m"
+RESET="\e[0m"
+COUNTRY="${1:-Netherlands,Germany}"
+NUM="${2:-200}"
+
+echo -e "${CYAN}Saving backup of current mirror list...${RESET}"
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+echo -e "${GREEN}Mirror list has been backed up successfully!${RESET}"
+
+echo -e "${YELLOW}Updating top $NUM mirrors for $COUNTRY...${RESET}"
+
+sudo reflector \
+  --latest "$NUM" \
+  --country "$COUNTRY" \
+  --age 12 \
+  --protocol https \
+  --sort rate \
+  --save /etc/pacman.d/mirrorlist
+
+
+if [ $? -eq 0 ]; then
+    echo -e "${GREEN}Mirror list updated successfully!${RESET}"
+else
+    echo -e "${RED}Something went wrong!${RESET}"
+fi
+
