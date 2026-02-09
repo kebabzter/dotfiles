@@ -1,0 +1,6 @@
+width=30%
+height=30%
+prompt=time to search huh..
+key_down=Ctrl-n
+key_up=Ctrl-p
+term=kitty
