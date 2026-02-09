@@ -4,7 +4,7 @@
   "modules-center": ["hyprland/window"],
   "modules-right": ["network", "pulseaudio", "battery", "clock"],
   "clock": {
-    "format": "<span foreground='#E8DDB5'>   </span>{:%a %d %H:%M}",
+    "format": "<span foreground='#b16286'>   </span>{:%a %d %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "battery": {
@@ -12,21 +12,21 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "<span size='13000' foreground='#E8DDB5'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#E8DDB5'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E8DDB5'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#E8DDB5'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#E8DDB5'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#E8DDB5'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#E8DDB5'> </span>{capacity}%",
+    "format": "<span size='13000' foreground='#d79921'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#d79921'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#d79921'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#d79921'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#d79921'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#d79921'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#d79921'> </span>{capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}"
   },
   "network": {
-    "format-wifi": "<span size='13000' foreground='#E8DDB5'>  </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#E8DDB5'>󰈀  </span>Ethernet",
+    "format-wifi": "<span size='13000' foreground='#689d6a'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#689d6a'>󰈀  </span>Ethernet",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#E8DDB5'>  </span>Disconnected",
+    "format-disconnected": "<span size='13000' foreground='#689d6a'>  </span>Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
   },
   "pulseaudio": {

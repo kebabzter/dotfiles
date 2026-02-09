@@ -76,23 +76,23 @@ button:hover {
 }
 
 #clock {
-    color: @off-white;
-    border-bottom: 2px solid @off-white;
+    color: @plum;
+    border-bottom: 2px solid @plum;
 }
 
 #clock.date {
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+    color: @plum;
+    border-bottom: 2px solid @plum;
 }
 
 #pulseaudio {
-    color: @off-white;
-    border-bottom: 2px solid @off-white;
+    color: @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #network {
-    color: @off-white;
-    border-bottom: 2px solid @off-white;
+    color: @aqua;
+    border-bottom: 2px solid @aqua;
 }
 
 #idle_inhibitor {
@@ -105,8 +105,8 @@ button:hover {
 }
 
 #battery {
-    color: @off-white;
-    border-bottom: 2px solid @off-white;
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
