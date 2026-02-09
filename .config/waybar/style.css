@@ -13,7 +13,6 @@ window#waybar {
     color: @off-darker;
     transition-property: background-color;
     transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
 }
 
 #window {
