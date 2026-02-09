@@ -9,8 +9,8 @@
 
 window#waybar {
     background: transparent;
-    background-color: @crust;
-    color: @overlay0;
+    background-color: @base;
+    color: @off-darker;
     transition-property: background-color;
     transition-duration: 0.1s;
     border-bottom: 1px solid @overlay1;
@@ -30,8 +30,8 @@ button {
 
 button:hover {
     background: inherit;
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    color: @off-white;
+    border-top: 2px solid @off-white;
 }
 
 #workspaces button {
@@ -40,14 +40,14 @@ button:hover {
 
 #workspaces button.focused {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @rosewater;
-    border-top: 2px solid @rosewater;
+    color: @off-white;
+    border-top: 2px solid @off-white;
 }
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    color: @off-white;
+    border-top: 2px solid @off-white;
 }
 
 #workspaces button.urgent {
@@ -76,8 +76,8 @@ button:hover {
 }
 
 #clock {
-    color: @maroon;
-    border-bottom: 2px solid @maroon;
+    color: @off-white;
+    border-bottom: 2px solid @off-white;
 }
 
 #clock.date {
@@ -86,13 +86,13 @@ button:hover {
 }
 
 #pulseaudio {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @off-white;
+    border-bottom: 2px solid @off-white;
 }
 
 #network {
-    color: @yellow;
-    border-bottom: 2px solid @yellow;
+    color: @off-white;
+    border-bottom: 2px solid @off-white;
 }
 
 #idle_inhibitor {
@@ -105,8 +105,8 @@ button:hover {
 }
 
 #battery {
-    color: @green;
-    border-bottom: 2px solid @green;
+    color: @off-white;
+    border-bottom: 2px solid @off-white;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
