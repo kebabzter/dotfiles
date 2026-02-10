@@ -23,10 +23,10 @@
     "tooltip-format": "{time}"
   },
   "network": {
-    "format-wifi": "<span size='13000' foreground='#689d6a'>  </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#689d6a'>󰈀  </span>Ethernet",
+    "format-wifi": "<span size='13000' foreground='#438588'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#438588'>󰈀  </span>Ethernet",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#689d6a'>  </span>Disconnected",
+    "format-disconnected": "<span size='13000' foreground='#438588'>  </span>Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
   },
   "pulseaudio": {

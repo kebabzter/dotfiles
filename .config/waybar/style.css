@@ -86,13 +86,13 @@ button:hover {
 }
 
 #pulseaudio {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @aqua;
+    border-bottom: 2px solid @aqua;
 }
 
 #network {
-    color: @aqua;
-    border-bottom: 2px solid @aqua;
+    color: @blue;
+    border-bottom: 2px solid @blue;
 }
 
 #idle_inhibitor {
