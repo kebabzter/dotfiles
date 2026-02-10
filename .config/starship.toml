@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$os$username$directory$git_branch$git_status$c$cpp$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$conda$pixi$time$line_break$character
+$os$username$directory$git_branch$git_status$c$cpp$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$conda$pixi$line_break$character
 """
 
 palette = 'gruvbox_dark'
