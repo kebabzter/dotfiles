@@ -33,6 +33,7 @@ return {
           'svelte',
           'emmet_ls',
           'jdtls',
+          'rust_analyzer',
         }
       })
 

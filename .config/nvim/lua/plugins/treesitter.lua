@@ -28,6 +28,7 @@ return {
                  "markdown_inline",
                  "svelte",
                  "yaml",
+                 "rust",
             },
             auto_install = false,
         })
