@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Heroes-3
+Exec=env WINEPREFIX=/home/gabriel/games/wineprefixes/heroes wine "/home/gabriel/games/Heroes Launcher/Heroes Launcher.exe" 
+Type=Application
+Keywords=heroes;wog;heroes3
+Categories=Game;
