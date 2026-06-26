@@ -294,8 +294,22 @@ hl.bind(mainMod .. "+ SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd('hyprctl keyword monitor "HDMI-A-1,1920x1080@119.88Hz,auto,1"'))
-hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd('hyprctl keyword monitor "eDP-1,1920x1200@60.01Hz,1920x0,1"'))
-hl.bind(mainMod .. " + ALT + H", hl.dsp.exec_cmd('hyprctl keyword monitor "eDP-1,1920x1200@165.00Hz,1920x0,1"'))
+hl.bind(mainMod .. "+ ALT + L", function()
+    hl.monitor({
+        output = "eDP-1",
+        mode = "1920x1200@60.01Hz",
+        position = "1920x0",
+        scale = 1
+    })
+end)
+hl.bind(mainMod .. "+ ALT + H", function()
+    hl.monitor({
+        output = "eDP-1",
+        mode = "1920x1200@165.00Hz",
+        position = "1920x0",
+        scale = 1
+    })
+end)
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd('hyprctl keyword monitor "HDMI-A-1,2560x1440@143.91Hz,auto,1"'))
 
 -- Switch workspaces with mainMod + [0-9]
