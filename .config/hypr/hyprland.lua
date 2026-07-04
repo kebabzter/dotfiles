@@ -18,14 +18,14 @@
 hl.monitor({
     output   = "HDMI-A-1",
     mode     = "2560x1440@143.91Hz",
-    position = "auto",
+    position = "1920x0",
     scale    = 1,
 })
 
 hl.monitor({
     output   = "eDP-1",
     mode     = "1920x1200@165.00Hz",
-    position = "1920x0",
+    position = "auto",
     scale    = 1,
 })
 
@@ -298,7 +298,7 @@ hl.bind(mainMod .. "+ ALT + L", function()
     hl.monitor({
         output = "eDP-1",
         mode = "1920x1200@60.01Hz",
-        position = "1920x0",
+        position = "auto",
         scale = 1
     })
 end)
@@ -306,7 +306,7 @@ hl.bind(mainMod .. "+ ALT + H", function()
     hl.monitor({
         output = "eDP-1",
         mode = "1920x1200@165.00Hz",
-        position = "1920x0",
+        position = "auto",
         scale = 1
     })
 end)
