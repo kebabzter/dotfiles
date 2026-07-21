@@ -6,8 +6,8 @@ CYAN="\e[36m"
 YELLOW="\e[33m"
 RED="\e[31m"
 RESET="\e[0m"
-COUNTRY="${1:-Netherlands,Germany}"
-NUM="${2:-200}"
+COUNTRY="${1:-Netherlands,Germany,Bulgaria}"
+NUM="${2:-100}"
 
 echo -e "${CYAN}Saving backup of current mirror list...${RESET}"
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
@@ -21,6 +21,7 @@ sudo reflector \
   --age 12 \
   --protocol https \
   --sort rate \
+  --download-timeout 20 \
   --save /etc/pacman.d/mirrorlist
 
 

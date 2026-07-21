@@ -54,6 +54,7 @@ button:hover {
     background-color: #eb4d4b;
 }
 
+#language,
 #pulseaudio,
 #clock,
 #battery,
@@ -93,6 +94,11 @@ button:hover {
 #network {
     color: @blue;
     border-bottom: 2px solid @blue;
+}
+
+#language {
+    color: @text;
+    border-bottom: 2px solid @text;
 }
 
 #idle_inhibitor {

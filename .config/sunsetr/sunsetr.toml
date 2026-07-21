@@ -1,5 +1,5 @@
 #[Backend]
-backend = "auto"         # Backend to use: "auto", "hyprland", "hyprsunset" or "wayland"
+backend = "hyprland"         # Backend to use: "auto", "hyprland", "hyprsunset" or "wayland"
 transition_mode = "geo"  # Select: "geo", "finish_by", "start_at", "center", "static"
 
 #[Smoothing]
@@ -25,5 +25,10 @@ static_gamma = 100       # Gamma percentage for static mode (10-200%)
 transition_duration = 45 # Transition duration in minutes (5-120)
 
 #[Geolocation]
-latitude = 52.373084     # Geographic latitude (auto-detected on first run)
-longitude = 4.899902     # Geographic longitude (use 'sunsetr geo' to change)
+# Bulgaria
+latitude = 42.697513
+longitude = 23.324146
+
+# Netherlands
+# latitude = 52.373084     # Geographic latitude (auto-detected on first run)
+# longitude = 4.899902     # Geographic longitude (use 'sunsetr geo' to change)
