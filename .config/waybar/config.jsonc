@@ -8,7 +8,7 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "hyprland/language": {
-    "format": "<span size='13000'>󰗊</span> {}",
+    "format": "<span>󰗊</span> {}",
     "format-en": "en",
     "format-bg": "bg",
     "keyboard-name": "at-translated-set-2-keyboard"
