@@ -293,6 +293,9 @@ hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot --clipboard-only -m region"))
 hl.bind(mainMod .. "+ SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
+-- Open pdf with wofi 
+hl.bind(mainMod .. "+ SHIFT + P", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/open-pdf.sh"))
+
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd('hyprctl keyword monitor "HDMI-A-1,1920x1080@119.88Hz,auto,1"'))
 hl.bind(mainMod .. "+ ALT + L", function()
     hl.monitor({
@@ -321,7 +324,7 @@ for i = 1, 10 do
 end
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
+hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
