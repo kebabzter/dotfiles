@@ -29,6 +29,8 @@ hl.monitor({
     scale    = 1,
 })
 
+-- hl.monitor({output="", mode="preferred", position="auto", scale="1"})
+
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
@@ -50,6 +52,7 @@ local menu        = "wofi --show drun"
 --
 hl.on("hyprland.start", function ()
   hl.exec_cmd("waybar & hyprpaper & swaync & hypridle & sunsetr")
+  hl.exec_cmd("pactl load-module module-combine-sink sink_name=combined_audio sink_properties=device.description=\"Simultaneous_Output\"")
 end)
 
 
