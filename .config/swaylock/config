@@ -1,0 +1,52 @@
+image=~/dotfiles/.config/backgrounds/wallpaper-frog-ascii.png
+effect-blur=7x5
+effect-vignette=0.2:0.5
+#
+# Clock & Date (Positioned top-right, right-aligned)
+clock
+timestr=%H:%M
+datestr=%A, %d %B %Y
+font=JetBrainsMono Nerd Font
+font-size=90
+date-size=25
+indicator-y-expression=h/2 + 35
+
+# Color Palette (Catppuccin Mocha hex values without alpha)
+base: 1e1e2e, surface0: 313244, text: cdd6f4, subtext1: bac2de
+yellow (accent): f9e2af, red (fail): f38ba8, blue (caps): 89b4fa
+
+# General Indicator Colors
+color=1e1e2e
+text-color=cdd6f4
+date-color=bac2de
+
+# Center Avatar Display
+user-image=~/.face
+avatar-size=100
+
+# Input Field / Ring Colors
+indicator-radius=120
+indicator-thickness=10
+
+inside-color=313244
+inside-clear-color=313244
+inside-caps-lock-color=313244
+inside-ver-color=313244
+inside-wrong-color=313244
+
+line-color=f9e2af
+line-clear-color=f9e2af
+line-caps-lock-color=89b4fa
+line-ver-color=f9e2af
+line-wrong-color=f38ba8
+
+ring-color=f9e2af
+ring-clear-color=f9e2af
+ring-caps-lock-color=89b4fa
+ring-ver-color=f9e2af
+ring-wrong-color=f38ba8
+
+key-hl-color=f9e2af
+bs-hl-color=f38ba8
+
+separator-color=00000000

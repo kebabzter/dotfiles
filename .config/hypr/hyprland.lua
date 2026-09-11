@@ -15,17 +15,34 @@
 ------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
+
+-- monitor on right laptop left
+-- hl.monitor({
+--     output   = "HDMI-A-1",
+--     mode     = "2560x1440@143.91Hz",
+--     position = "1920x0",
+--     scale    = 1,
+-- })
+--
+-- hl.monitor({
+--     output   = "eDP-1",
+--     mode     = "1920x1200@165.00Hz",
+--     position = "0x0",
+--     scale    = 1,
+-- })
+
+-- monitor on left laptop right
 hl.monitor({
     output   = "HDMI-A-1",
     mode     = "2560x1440@143.91Hz",
-    position = "1920x0",
+    position = "0x0",
     scale    = 1,
 })
 
 hl.monitor({
     output   = "eDP-1",
     mode     = "1920x1200@165.00Hz",
-    position = "auto",
+    position = "2560x0",
     scale    = 1,
 })
 
