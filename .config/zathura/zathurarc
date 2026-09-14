@@ -1,0 +1,4 @@
+set default-bg "#1e1e2e"
+set selection-notification false
+
+# map <Tab> abort; toggle_index
