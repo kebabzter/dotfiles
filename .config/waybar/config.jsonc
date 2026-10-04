@@ -10,8 +10,8 @@
   "hyprland/language": {
     "format": "<span>󰗊</span> {}",
     "format-en": "en",
-    "format-bg": "bg",
-    "keyboard-name": "at-translated-set-2-keyboard"
+    "format-bg": "bg"
+    // "keyboard-name": "keychron-keychron-v3"
   },
   "battery": {
     "states": {
