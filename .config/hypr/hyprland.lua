@@ -1,7 +1,6 @@
 -- This is an example Hyprland Lua config file.
 -- Refer to the wiki for more information.
 -- https://wiki.hypr.land/Configuring/Start/
-
 -- Please note not all available settings / options are set here.
 -- For a full list, see the wiki
 
@@ -32,6 +31,7 @@
 -- })
 
 -- monitor on left laptop right
+local laptopPos = "auto";
 hl.monitor({
     output   = "HDMI-A-1",
     mode     = "2560x1440@143.91Hz",
@@ -42,7 +42,7 @@ hl.monitor({
 hl.monitor({
     output   = "eDP-1",
     mode     = "1920x1200@165.00Hz",
-    position = "2560x0",
+    position = laptopPos,
     scale    = 1,
 })
 
@@ -317,11 +317,12 @@ hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. "+ SHIFT + P", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/open-pdf.sh"))
 
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd('hyprctl keyword monitor "HDMI-A-1,1920x1080@119.88Hz,auto,1"'))
+
 hl.bind(mainMod .. "+ ALT + L", function()
     hl.monitor({
         output = "eDP-1",
         mode = "1920x1200@60.01Hz",
-        position = "auto",
+        position = laptopPos,
         scale = 1
     })
 end)
@@ -329,10 +330,11 @@ hl.bind(mainMod .. "+ ALT + H", function()
     hl.monitor({
         output = "eDP-1",
         mode = "1920x1200@165.00Hz",
-        position = "auto",
+        position = laptopPos,
         scale = 1
     })
 end)
+
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd('hyprctl keyword monitor "HDMI-A-1,2560x1440@143.91Hz,auto,1"'))
 
 -- Switch workspaces with mainMod + [0-9]

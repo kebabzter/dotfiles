@@ -35,3 +35,17 @@ vim.keymap.set("n", "Q", "<nop>")
 --If you are inside a bash script for example instead of running chmod to make it 
 --executable you just do this and it works :)
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", {silent = true})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "tex", "latex" },
+  callback = function(ev)
+    local opts = { buffer = ev.buf, expr = true, silent = true }
+
+    vim.keymap.set({ "n", "v" }, "j", "v:count == 0 ? 'gj' : 'j'", opts)
+    vim.keymap.set({ "n", "v" }, "k", "v:count == 0 ? 'gk' : 'k'", opts)
+  end,
+})
+-- vim.keymap.set('n', 'j', 'gj', { noremap = true, silent = true })
+-- vim.keymap.set('n', 'k', 'gk', { noremap = true, silent = true })
+-- vim.keymap.set('v', 'j', 'gj', { noremap = true, silent = true })
+-- vim.keymap.set('v', 'k', 'gk', { noremap = true, silent = true })

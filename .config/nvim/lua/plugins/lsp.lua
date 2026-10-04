@@ -34,6 +34,7 @@ return {
           'emmet_ls',
           'jdtls',
           'rust_analyzer',
+          'ltex_plus',
         }
       })
 

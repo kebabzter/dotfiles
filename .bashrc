@@ -20,7 +20,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
-export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$JAVA_HOME/bin:$PATH"
 
 alias windows='sudo grub-reboot "Windows Boot Manager (on /dev/nvme0n1p1)" && reboot'
