@@ -45,7 +45,7 @@ window#eDP-1{
 }
 
 #error-label{
-    color: #ff5555;        /* Optional: set error color */
+    color: #ff5555;        
     font-weight: bold;
     background: transparent;
 }
