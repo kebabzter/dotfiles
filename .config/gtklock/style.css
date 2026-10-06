@@ -1,0 +1,55 @@
+window#eDP-1{
+     background-image: url("../backgrounds/wallpaper-frog-ascii-blurred.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-color: black;
+}
+
+
+#clock-label {
+    color: #cdd6f4;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#date-label{
+    color: #cdd6f4;
+    font-size: 20px;
+}
+
+#unlock-button,
+#unlock-icon {
+    opacity: 0;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+#input-field {
+    margin-top: 30px;
+    background-color: black;
+    color: #cdd6f4;
+    border: 2px solid #f9e2af;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#error-label{
+    color: #ff5555;        /* Optional: set error color */
+    font-weight: bold;
+    background: transparent;
+}
+
+#input-label{
+    font-size: 0px;
+}

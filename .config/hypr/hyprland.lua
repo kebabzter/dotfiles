@@ -311,7 +311,7 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("pkill waybar; waybar &"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot --clipboard-only -m region"))
 hl.bind(mainMod .. "+ SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
-hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. "+ SHIFT + L", hl.dsp.exec_cmd("gtklock"))
 
 -- Open pdf with wofi 
 hl.bind(mainMod .. "+ SHIFT + P", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/open-pdf.sh"))
