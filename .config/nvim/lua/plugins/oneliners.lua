@@ -5,16 +5,16 @@ return {
             vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
         end
     },
-    {
-        'richwomanbtc/overleaf.nvim',
-          config = function()
-              require('overleaf').setup({
-            env_file = '.env',
-            sync_dir = '~/.overleaf',
-          })
-          end,
-          build = 'cd node && npm install',
-    },
+    -- {
+    --     'richwomanbtc/overleaf.nvim',
+    --       config = function()
+    --           require('overleaf').setup({
+    --         env_file = '.env',
+    --         sync_dir = '~/.overleaf',
+    --       })
+    --       end,
+    --       build = 'cd node && npm install',
+    -- },
     {
       'brenoprata10/nvim-highlight-colors',
       config = function()
