@@ -31,11 +31,11 @@
 -- })
 
 -- monitor on left laptop right
-local laptopPos = "auto";
+local laptopPos = "0x0";
 hl.monitor({
     output   = "HDMI-A-1",
     mode     = "2560x1440@143.91Hz",
-    position = "0x0",
+    position = "-2560x0",
     scale    = 1,
 })
 
