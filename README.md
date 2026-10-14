@@ -11,7 +11,7 @@ Start from a working Arch install with a user account and internet.
 ```
 sudo pacman -S --needed git
 git clone https://github.com/kebabzter/dotfiles.git ~/dotfiles
-bash ~/dotfiles/.local/bin/scripts/restore.sh
+bash ~/dotfiles/.local/bin/scripts/restore-system
 ```
 
 The script installs the packages, links the dotfiles with stow, restores the
