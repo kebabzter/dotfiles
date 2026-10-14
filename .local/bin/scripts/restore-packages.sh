@@ -26,12 +26,6 @@ sudo pacman -S --needed - < "$scripts/pkglist-pacman.txt"
 echo "Installing AUR packages..."
 yay -S --needed - < "$scripts/pkglist-aur.txt"
 
-echo "Linking dotfiles with stow..."
-cd "$dotfiles"
-stow .
-
-rm -f "$HOME/etc"
-
 echo "Restoring grub config..."
 sudo cp "$dotfiles/etc/default/grub" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -52,5 +46,17 @@ sudo systemctl enable \
     nvidia-resume.service \
     nvidia-suspend.service \
     reflector.timer
+
+echo "Linking dotfiles with stow..."
+cd "$dotfiles"
+stow --adopt .
+git checkout .
+
+rm -f "$HOME/etc"
+
+if [ ! -d "$HOME/Documents/holocron" ]; then
+    echo "Cloning Obsidian vault..."
+    git clone git@github.com:kebabzter/holocron.git "$HOME/Documents/holocron" || echo "Vault clone failed. Add your SSH key to GitHub, then run the clone command again."
+fi
 
 echo "Done!"
