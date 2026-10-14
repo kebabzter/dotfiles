@@ -30,4 +30,27 @@ echo "Linking dotfiles with stow..."
 cd "$dotfiles"
 stow .
 
+rm -f "$HOME/etc"
+
+echo "Restoring grub config..."
+sudo cp "$dotfiles/etc/default/grub" /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+echo "Restoring system config files..."
+sudo cp "$dotfiles/etc/modprobe.d/nvidia-power.conf" /etc/modprobe.d/nvidia-power.conf
+
+echo "Enabling services..."
+sudo systemctl enable \
+    bluetooth.service \
+    gdm.service \
+    lm_sensors.service \
+    mongodb.service \
+    NetworkManager.service \
+    NetworkManager-dispatcher.service \
+    NetworkManager-wait-online.service \
+    nvidia-hibernate.service \
+    nvidia-resume.service \
+    nvidia-suspend.service \
+    reflector.timer
+
 echo "Done!"
