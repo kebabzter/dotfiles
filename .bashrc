@@ -19,6 +19,7 @@ bind '"\C-f":"tmux-sessionizer\n"'
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/path/to/biber/folder:$PATH"
 
 export JAVA_HOME=/usr/lib/jvm/default
 export PATH="$JAVA_HOME/bin:$PATH"

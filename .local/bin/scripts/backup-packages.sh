@@ -1,6 +1,6 @@
 #!/bin/bash
 
-backup_dir="$HOME/dotfiles"
+backup_dir="$HOME/dotfiles/.local/bin/scripts"
 mkdir -p "$backup_dir"
 
 echo "Saving pacman packages..."

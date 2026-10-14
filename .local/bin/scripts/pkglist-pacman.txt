@@ -1,6 +1,7 @@
 baobab
 base
 base-devel
+biber
 blueman
 bluez-utils
 btrfs-progs
@@ -10,11 +11,15 @@ cowsay
 dbeaver
 decibels
 dhcpcd
+discord
+dnsmasq
+docker-compose
 dolphin
 efibootmgr
 epiphany
 evince
 firefox
+fzf
 gdm
 ghostty
 gimp
@@ -52,11 +57,11 @@ gnome-weather
 grilo-plugins
 grub
 gst-plugin-pipewire
+gtklock
 gvfs
 gvfs-afc
 gvfs-dnssd
 gvfs-goa
-gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
@@ -72,6 +77,7 @@ hyprshot
 hyprsunset
 intel-ucode
 iwd
+jupyterlab
 kitty
 lib32-freetype2
 libpulse
@@ -82,6 +88,7 @@ loupe
 malcontent
 man-db
 mariadb
+maven
 mysql-workbench
 nano
 nautilus
@@ -89,7 +96,7 @@ neovim
 networkmanager
 npm
 ntfs-3g
-nvidia
+nvidia-open
 nvidia-settings
 nvm
 nwg-look
@@ -98,12 +105,16 @@ orca
 os-prober
 pavucontrol
 php-sqlite
+piper
 pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
 postgresql
+python-pip
+qpwgraph
 reflector
+rustup
 rygel
 simple-scan
 sl
@@ -114,6 +125,11 @@ stow
 sushi
 swaync
 tecla
+texlive-bibtexextra
+texlive-binextra
+texlive-latex
+texlive-latexrecommended
+texlive-publishers
 tmux
 toilet
 totem
@@ -121,7 +137,7 @@ ttf-cascadia-code-nerd
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 virtualbox
-virtualbox-host-modules-arch
+virtualbox-host-dkms
 vivaldi
 waybar
 wireplumber
@@ -131,4 +147,6 @@ xdg-desktop-portal-gnome
 xdg-desktop-portal-wlr
 xdg-user-dirs-gtk
 yelp
+zathura
+zathura-pdf-poppler
 zram-generator

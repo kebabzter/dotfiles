@@ -28,3 +28,12 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "90"
 
 vim.g.mapleader = " "
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = { "markdown", "tex", "text", "gitcommit" }, -- add/remove filetypes here
+--   callback = function()
+--     vim.opt_local.wrap = true
+--     vim.opt_local.breakindent = true -- visually indents wrapped lines to match line start
+--     vim.opt_local.linebreak = true   -- wraps at words instead of middle of characters
+--   end,
+-- })
